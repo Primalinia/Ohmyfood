@@ -1,11 +1,93 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang=fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Ohmyfood</title>
+    <link rel="stylesheet" href="./assets/style.css">
+    <script src="https://kit.fontawesome.com/67fb51b6b9.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Shrikhand&display=swap" rel="stylesheet"> 
+    <!-- Font aweasome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
 </head>
 <body>
-    
+    <!-- LOGO  -->
+    <header class="header">
+        <div class="header-container">
+            <div class="header-logo">
+                <a href="#"><i class="fa-solid fa-arrow-back"></i>
+                 <div class="header-logo-container">
+                    <img src="./assets/images/logo/ohmyfood.png" alt="Logo de Ohmyfood" class="logo">
+                </a>
+            </div>
+            <!-- RECHERCHE PAR VILLE -->    
+            <div class="header-location">
+                <i class="fa-solid fa-location-dot"></i>
+                <input type="text" placeholder="Paris, Belleville">
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="main-wrapper">
+            <section class="search">
+                <div class="search-wrapper">
+                    <div class="search-heading">
+                        <h1>Reservez le menu qui vous convient</h1>
+                    </div>
+                    <div class="search-discover">
+                        <h2>Découvrez des restaurants d'exeption, sélectionnés par nos soins</h2>
+                    </div>
+                    <!-- BOUTON DE RECHERCHE -->
+                    <div class="search-button">
+                        <a href="#" title="Explorez nos restaurants">Explorez nos restaurants</a>
+                    </div>
+                </div>
+            </section>
+            <!-- SECTION FONCTIONNEMENT -->
+            <section class="functioning">
+                <div class="functioning-wrapper">
+                    <div class="functioning-title">
+                        <h1>Fonctionnement</h1>
+                    </div>
+                    <div class="functioning-options">
+                        <div class="functioning-options-row">
+                            <div class="icon-number">1</div>
+                            <i class="fa-solid fa-mobile-screen-button icon-gray"></i>
+                            <h2>Choisisez un restaurant</h2>
+                        </div>
+                        <div class="functioning-options-row">
+                            <div class="icon-number">2</div>
+                            <i class="fa-solid fa-list-ul icon-gray"></i>
+                            <h2>Composez votre menu</h2>
+                        </div>
+                        <div class="functioning-options-row">
+                            <div class="icon-number">3</div>
+                            <i class="fa-solid fa-store icon-primary"></i>
+                            <h2>Dégustez au restaurant</h2>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Section Restaurants -->
+            <section class="restaurants">
+                <div class="restaurants-title">
+                    <h2 class="section-title">Restaurants</h2>
+                </div>
+                <div class="restaurants-cards">
+                    <div class="restaurants-card-container">
+                        <article class="restaurants-card">
+                            <a href="restaurant/la-palette-du-gout" title="La palette du gout"></a>
+                        </article>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
 </body>
 </html>

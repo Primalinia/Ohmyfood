@@ -1,0 +1,21 @@
+.entrees {
+  font-weight: 700;
+}
+
+* {
+  --main-bg-color:#F6F6F6;
+}
+
+.bottom {
+  border: 1px solid 0;
+}
+
+#paper {
+  color: #000000;
+}
+
+body {
+  width: 100%;
+}
+
+/*# sourceMappingURL=style.css.map */
