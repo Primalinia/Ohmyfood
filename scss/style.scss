@@ -20,13 +20,16 @@ $font-family-logo-titre: "Shrikhand", serif;
     --main-bg-color:#FFFFFF; // Gris
     --main-color: #F6F6F6;
     --footer-bg-color: #353535;
+    --Green: #99E2D0;
+    --Green-Font: #008766;
+
 
 }
 
 body {
     min-width: 375px;
-   margin: 0;
-   padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 h1,h2,h3,p {
@@ -59,8 +62,6 @@ header {
     height: 63px;
 }
 
-
-
 .header.logo {
     height: 63px;
 }
@@ -88,9 +89,8 @@ header {
     gap: 17px;
     background: #EAEAEA;
     box-shadow: 0px 4px 4px 0px #00000040;
-
-
 }
+
 i.fa-location-dot {
     height: 50px;
     background-color: #EAEAEA;
@@ -104,9 +104,9 @@ input {
     background-color: #353535;
 
     border: none;
-    background-color: #EAEAEA;
-    
+    background-color: #EAEAEA;    
 }
+
 .main-wrapper {
     width: 100%;
     height: 100%;
@@ -120,6 +120,7 @@ input {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 57px;
 }
 // Centrage à faire
 .search-heading {    
@@ -154,24 +155,32 @@ input {
     justify-content: center;
     align-items: center;
     position: relative;
-    left: 82px;
+    left: 10px;
     border-radius: 25px;
     margin-top: 27px;
     background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
     box-shadow: 0px 4px 10px 0px #00000040;
         a {
             color: #FFFFFF;
+            text-decoration: none;
         }
 }
 // FONCTIONNEMENT
+.functioning {
+    background: var(--main-bg-color);
+}
 .functioning-wrapper {
-    width: 100%;
+    width: 85.999%;
     height: 100%;
     display: grid;
     grid-template-rows: repeat(4, 1fr);
     grid-template-columns: 1fr;
+    row-gap: 24px;
     align-items: center;
     background: var(--main-bg-color);
+    padding-bottom: 68px;
+    position: relative;
+    left: 10%;
 
 }
 .functioning-title {
@@ -180,17 +189,102 @@ input {
     position: relative;
     left: 20px;
 }
+
 .functioning-options {
-    width:322px;
+    
     height: 72px;
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 28px;
+    position: relative;
+    left: 20px;
 }
 
 .functioning-options-row {
+    display: flex;
+    align-items: center;
+    height: 72px;
     border-radius: 20px;
     background: var(--main-color);
     box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1490196078);
 }
 
+.icon-number {
+    width: 24px;
+    height: 24px;
+    border: 1px ;
+    border-radius: 50px;
+    background-color: #9356DC;
+    position: relative;
+    left: -12px;
+    flex-shrink: 0;
+    color: #FFFFFF;
+    display: flex;
+    /* text-align: center; */
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-gray .icon-primary {
+    height: 20px;
+    font-weight: 900;
+    position: relative;
+    left: 22px;
+    flex-shrink: 0;
+}
+
+.icon-primary {
+    color: $primary-color; 
+    position: relative;
+    left: 20px;
+}
+
+.icon-gray {
+    color: $icon-gray;
+    position: relative;
+    left: 20px;
+   
+}
+
+h2 {
+    width: 64%;
+    font-weight: 500;
+    font-size: 16px;
+    position: relative;
+    left: 45px;
+}
+
+// RESTAURANTS
+.restaurants {
+    padding: 0 18px 0 17px;
+    background-color: var(--main-color);
+}
+
+.restaurants-title {
+    padding: 54px 0 0 3px;
+    margin-bottom: 25px;
+}
+
+.restaurants-card-content {
+    display: flex;
+    justify-content: space-between;
+}
+.restaurant-card-texte {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+}
+
+
+.restaurants-card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    
+}
 
 
 img {
@@ -200,7 +294,28 @@ img {
     border-radius: 15px 15px 0 0;
 }
     
-  
+ figcaption {
+    width: 80px;
+    height: 29px;
+    display: flex;
+    flex-shrink: 0;
+    right: 54px;
+    position: absolute;
+    top: 28px;
+   
+    border-radius: 2px;
+    background: var(--Green, #99E2D0);
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+    color: var(--Green-Font, #008766);
+    text-align: center;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    justify-content: center;
+    align-items: center;
+ } 
   
 
 
