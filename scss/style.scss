@@ -22,8 +22,13 @@ $font-family-logo-titre: "Shrikhand", serif;
     --footer-bg-color: #353535;
     --Green: #99E2D0;
     --Green-Font: #008766;
+    
 
 
+}
+
+body a {
+    text-decoration: none;
 }
 
 body {
@@ -35,6 +40,7 @@ body {
 h1,h2,h3,p {
     font-family: $font-family-text;
     margin: 0;
+    color: black;
 }
 
 .header.fa-arrow-back {
@@ -79,14 +85,16 @@ header {
 .header-logo img {
     height: auto;
     width: 43.2%;
-    padding: 14px 89px 0px 89px;
+    padding: 18px 0px 10px 0px;
+    position: relative;
+    left: 103px;
 }
 
 .header-location {
     height: 50px;
     display: flex;
     justify-content: center;
-    gap: 17px;
+    
     background: #EAEAEA;
     box-shadow: 0px 4px 4px 0px #00000040;
 }
@@ -96,21 +104,24 @@ i.fa-location-dot {
     background-color: #EAEAEA;
     display: flex;
     align-items: center;
+    position: relative;
+    left: 20px;
 }
 
 input {
     
     font-size: 16px;
     background-color: #353535;
-
     border: none;
-    background-color: #EAEAEA;    
+    background-color: #EAEAEA; 
+    position: relative;
+    left: 35px;   
 }
 
 .main-wrapper {
     width: 100%;
     height: 100%;
-    padding-top: 32px;
+    padding-top: 59px;
     background-color: var(--main-color);
 }
 
@@ -126,8 +137,7 @@ input {
 .search-heading {    
     width: 70%;
     height: 68px;
-    position: relative;
-    left: 42px;
+   
     display: flex;
     align-items: center;
     text-align: center;
@@ -135,7 +145,7 @@ input {
 
 .search-discover {
     width: 90.7%;
-        h2 {
+        p {
             height: 46px;
             width: 92.614%;
             font-weight: 300;
@@ -144,7 +154,7 @@ input {
             align-items: center;
             text-align: center;
             position: relative;
-            left: 28px;
+            left: 15px;
         }
 }
 
@@ -154,8 +164,7 @@ input {
     height: 50px;
     justify-content: center;
     align-items: center;
-    position: relative;
-    left: 10px;
+   
     border-radius: 25px;
     margin-top: 27px;
     background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
@@ -170,7 +179,7 @@ input {
     background: var(--main-bg-color);
 }
 .functioning-wrapper {
-    width: 85.999%;
+    width: 85.87%;
     height: 100%;
     display: grid;
     grid-template-rows: repeat(4, 1fr);
@@ -180,24 +189,23 @@ input {
     background: var(--main-bg-color);
     padding-bottom: 68px;
     position: relative;
-    left: 10%;
+    left: 9%;
 
 }
 .functioning-title {
     width: 275px;
     height: 31px;
     position: relative;
-    left: 20px;
+    left: -15px;
 }
 
 .functioning-options {
-    
+    width: 100%;
     height: 72px;
     display: grid;
     grid-template-columns: 1fr;
     row-gap: 28px;
-    position: relative;
-    left: 20px;
+    
 }
 
 .functioning-options-row {
@@ -207,6 +215,9 @@ input {
     border-radius: 20px;
     background: var(--main-color);
     box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1490196078);
+        .functioning-options-row h2 {
+            width: 89%;
+        }
 }
 
 .icon-number {
@@ -225,33 +236,25 @@ input {
     align-items: center;
 }
 
-.icon-gray .icon-primary {
+.icon-gray {
     height: 20px;
     font-weight: 900;
-    position: relative;
-    left: 22px;
+    color: $icon-gray;
+    
     flex-shrink: 0;
 }
 
 .icon-primary {
     color: $primary-color; 
     position: relative;
-    left: 20px;
-}
-
-.icon-gray {
-    color: $icon-gray;
-    position: relative;
-    left: 20px;
-   
+    left: 11px;
 }
 
 h2 {
     width: 64%;
     font-weight: 500;
     font-size: 16px;
-    position: relative;
-    left: 45px;
+   
 }
 
 // RESTAURANTS
@@ -264,8 +267,14 @@ h2 {
     padding: 54px 0 0 3px;
     margin-bottom: 25px;
 }
+.restaurants-card-container {
+    width: 340px;
+    height: auto;
+    flex-shrink: 0;
+}
 
 .restaurants-card-content {
+    width: 340px;
     display: flex;
     justify-content: space-between;
 }
@@ -277,8 +286,11 @@ h2 {
 }
 
 
+
 .restaurants-card {
-    height: 100%;
+    width: 346px;
+    height: auto;
+    
     display: flex;
     flex-direction: column;
     position: relative;
@@ -288,8 +300,11 @@ h2 {
 
 
 img {
-    width: 100%;
-    height: 105px;
+    width: 340px;
+    border: 3px solid white;
+    position: relative;
+    left: -44px;
+    height: 251px;
     object-fit: cover;
     border-radius: 15px 15px 0 0;
 }
@@ -299,9 +314,10 @@ img {
     height: 29px;
     display: flex;
     flex-shrink: 0;
-    right: 54px;
+    
     position: absolute;
-    top: 28px;
+    right: 40px;
+    top: 27px;
    
     border-radius: 2px;
     background: var(--Green, #99E2D0);
@@ -315,7 +331,72 @@ img {
     line-height: normal;
     justify-content: center;
     align-items: center;
- } 
-  
+ }
+ 
+ 
+// La checkbox est invisible 
+input {
+    display: none;
+}
 
 
+
+// Footer
+.main-footer {
+    width: 86.67%;
+    height: 114px;
+    padding: 22px 25px;
+    display: flex;
+    flex-direction: row-reverse;
+    background-color: #353535;
+}
+.footer-logo {
+    display: flex;
+    width: 139px;
+    height: 27px;
+    padding-right: 1.418px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    right: 186px;
+}
+
+.footer-logo p {
+    width: 137px;
+    height: 27px;
+    color: #FFFFFF;
+    font-family: Shrikhand;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+
+
+.footer-nav {
+    width: 190px;
+    height: 100%;
+}
+
+nav {
+    
+    height: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+    padding-top: 48px;
+}
+
+.footer-nav-item {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    column-gap: 11px;
+}
