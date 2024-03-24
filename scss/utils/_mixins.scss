@@ -1,3 +1,31 @@
+// Mixin
+/// Headings
+
+/**** Logo ****/
+@mixin cursive__logo {
+    font-size: 27px;
+    font-family: "Shrikhand",cursive;
+}
+/**** title d'en tête ****/
+@mixin title__heading {
+    font-size: 24px;
+    line-height: 1;
+    font-weight: map-get($font-weight,bold);
+}
+
+/**** cercle ****/
+@mixin circle {
+    border-radius: 50%;
+}
+/**** Shadow ****/
+@mixin object-shadow ($color: $shadow) {
+    box-shadow: 0 4px 10px 0 $color;
+}
+
+/**** gradient ****/
+@mixin gradient ($oriantation: $degree) {
+    background:linear-gradient( $degree, $color-primary, $color-secondary);
+}
 //**** Responsive ****/
 
 @mixin table__responsive {
