@@ -1,5 +1,7 @@
-// Importation des fichiers SCSS 
-@import 'components/_buttons.scss';
-@import 'components/_loading-spinner.scss';
+// General 
 @import 'pages/_index.scss';
+@import 'utils/_mixins.scss';
+@import 'components/_buttons.scss';
+@import 'utils/_animations.scss';
+@import 'components/_loading-spinner.scss';
 @import 'pages/_pages-menu.scss';

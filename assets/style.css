@@ -1,10 +1,11 @@
-/* Error: Undefined variable.
- *   ,
- * 4 |     color: $white;
- *   |            ^^^^^^
- *   '
- *   scss/components/_buttons.scss 4:12  @import
- *   scss/style.scss 2:9                 root stylesheet */
+/* Error: Undefined mixin.
+ *     ,
+ * 103 | /         @include desktop__responsive {
+ * 104 | |             font-size: 32px;
+ * 105 | \         }
+ *     '
+ *   scss/pages/_index.scss 103:9  @import
+ *   scss/style.scss 2:9           root stylesheet */
 
 body::before {
   font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
@@ -14,5 +15,5 @@ body::before {
   padding: 1em;
   margin-bottom: 1em;
   border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a   \2577 \a 4 \2502      color: $white;\a   \2502             ^^^^^^\a   \2575 \a   scss/components/_buttons.scss 4:12  @import\a   scss/style.scss 2:9                 root stylesheet";
+  content: "Error: Undefined mixin.\a     \2577 \a 103 \2502  \250c          @include desktop__responsive {\a 104 \2502  \2502              font-size: 32px;\a 105 \2502  \2514          }\a     \2575 \a   scss/pages/_index.scss 103:9  @import\a   scss/style.scss 2:9           root stylesheet";
 }

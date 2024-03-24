@@ -1,0 +1,13 @@
+//**** Responsive ****/
+
+@mixin table__responsive {
+    @media all and (min-width: map-get($breakpoints, table)) {
+        @content;
+    }
+}
+
+@mixin desktop__responsive {
+    @media all and (min-width: map-get($breakpoints, desktop)) {
+        @content
+    }
+}
