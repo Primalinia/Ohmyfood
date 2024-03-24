@@ -7,7 +7,7 @@ $color-primary: #9356DC;
 $color-secondary: #FF79DA;
 $color-tertiary: #99E2D0;
 $grey: #EAEAEA;
-$white: #ffffff;
+$white: #FFFFFF;
 $shadow : #d5d5d5;
 $black: #353535;
 $LightGray: #F6F6F6;
@@ -21,16 +21,21 @@ $font-weight: (
     medium: 500,
     bold: 700,
 );
-//* A FAIIIRRRRREEE ! */
+
 /* Gradient */
 $gradient-loader : linear-gradient(to top, lighten($color-primary, 10%), $color-secondary, transparent, transparent);
-
 
 /**** Degree Gradient ****/
 $degree: 357deg;
 
-
-
-/* Loading spinner animation delay */
+/* Spinner délai d'animation*/
 $icons-delay: 610ms;
+
+
+/**** Responsive ****/
+$breakpoints: (
+    table: 768px,
+    desktop: 1024px,
+);
+
 

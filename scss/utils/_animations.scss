@@ -155,7 +155,7 @@
     opacity: 0;
   }
   
-  /* Animation pour les éléments d'entrée */
+  /* Animation des éléments d'entrée */
   @keyframes appearEntrance {
     0% {
       opacity: 0;
@@ -167,7 +167,7 @@
     }
   }
   
-  /* Animation pour les éléments de plat */
+  /* Animation des éléments de plats */
   @keyframes appearPlat {
     0% {
       opacity: 0;
@@ -179,7 +179,7 @@
     }
   }
   
-  /* Animation pour les éléments de dessert */
+  /* Animation des éléments desserts */
   @keyframes appearDessert {
     0% {
       opacity: 0;
@@ -190,4 +190,5 @@
       transform: translateY(0);
     }
   }
+  
   

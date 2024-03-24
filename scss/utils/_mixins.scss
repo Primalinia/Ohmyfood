@@ -26,6 +26,8 @@
 @mixin gradient ($oriantation: $degree) {
     background:linear-gradient( $degree, $color-primary, $color-secondary);
 }
+
+
 //**** Responsive ****/
 
 @mixin table__responsive {
