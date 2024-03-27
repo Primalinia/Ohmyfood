@@ -1,4 +1,4 @@
-/* Loading */
+// Loading 
 @keyframes loading-appear {
     50% {
         opacity: 0.95;
@@ -75,7 +75,7 @@
     }
 }
 
-/* Courses apparition */
+// Courses apparition 
 @keyframes fade-in {
     0% {
         transform: translateY(20px);
@@ -105,7 +105,9 @@
     }
 }
 
-/* Heart fill */
+
+// Heart fill 
+
 @keyframes heart-fill {
     0% {
         opacity: (0);
@@ -137,25 +139,41 @@
     }
 }
 
-/* CSS pour les éléments d'entrée */
-.race-list:nth-child(1) .race-cards {
-    animation: appearEntrance 1.5s ease forwards;
-    opacity: 0;
-  }
+// APPARITION DES ENTREES 
+
+.race-list {
+	&:nth-child(1) {
+		.race-cards {
+			animation: appearEntrance 1.5s ease forwards;
+			opacity: 0;
+		}
+	}
+}
+
+ // APPARITION DES PLATS 
   
-  /* CSS pour les éléments de plat */
-  .race-list:nth-child(2) .race-cards {
-    animation: appearPlat 5.5s ease forwards;
-    opacity: 0;
-  }
+.race-list {
+	&:nth-child(2) {
+		.race-cards {
+			animation: appearPlat 5.5s ease forwards;
+			opacity: 0;
+		}
+	}
+}
+
+  // APPARITION DES DESSERTS 
   
-  /* CSS pour les éléments de dessert */
-  .race-list:nth-child(3) .race-cards {
-    animation: appearDessert 9.5s ease forwards;
-    opacity: 0;
-  }
-  
-  /* Animation des éléments d'entrée */
+.race-list {
+	&:nth-child(3) {
+		.race-cards {
+			animation: appearDessert 9.5s ease forwards;
+			opacity: 0;
+		}
+	}
+}
+
+  // Animation pour les éléments d'entrée 
+
   @keyframes appearEntrance {
     0% {
       opacity: 0;
@@ -167,7 +185,8 @@
     }
   }
   
-  /* Animation des éléments de plats */
+  // Animation pour les éléments de plat 
+
   @keyframes appearPlat {
     0% {
       opacity: 0;
@@ -179,7 +198,7 @@
     }
   }
   
-  /* Animation des éléments desserts */
+  // Animation pour les éléments de dessert 
   @keyframes appearDessert {
     0% {
       opacity: 0;
@@ -190,5 +209,4 @@
       transform: translateY(0);
     }
   }
-  
   

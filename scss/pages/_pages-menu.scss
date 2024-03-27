@@ -1,11 +1,11 @@
-///* page__restaurants / adaptation-style *///
+///* pages__restaurants / adaptation-style *///
 
 .page__restaurant--img {
     position: relative;
     width: 100%;
     height: 250px;
 
-    @include desktop__responsive {
+    @include huge__responsive {
         height: 400px;
     }
 
@@ -23,7 +23,7 @@
     padding: 2% 5% 5% 5%;
     z-index: 0;
 
-    @include desktop__responsive {
+    @include huge__responsive {
         max-width: 1024px;
         margin: auto;
     }
@@ -33,13 +33,13 @@
         align-items: center;
         margin: auto;
 
-        @include table__responsive {
+        @include large__responsive {
             width: 400px;
             height: 41px;
             justify-content: center;
         }
 
-        @include desktop__responsive {
+        @include huge__responsive {
             width: 400px;
             height: 41px;
             justify-content: center;
@@ -49,13 +49,13 @@
             width: 87%;
             @include cursive__logo;
 
-            @include desktop__responsive {
+            @include huge__responsive {
                 display: flex;
                 font-size: 40px;
                 width: 95%;
             }
 
-            @include table__responsive {
+            @include large__responsive {
                 display: flex;
                 font-size: 35px;
                 width: 95%;
@@ -65,7 +65,7 @@
 
     &__container {
 
-        @include table__responsive ; @include desktop__responsive{
+        @include large__responsive ; @include huge__responsive{
             display: flex;
             flex-direction: column;
             align-items: flex-start;
@@ -83,7 +83,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    @include desktop__responsive ; @include table__responsive {
+    @include huge__responsive ; @include large__responsive {
         width: 100%;
     }
 
@@ -95,9 +95,9 @@
         font-weight: map-get($font-weight, light);
         text-transform: uppercase;
 
-        @include desktop__responsive {
+        @include huge__responsive {
             font-size: 22px;
-            ;
+            
         }
 
         &::after {
@@ -105,7 +105,7 @@
             position: absolute;
             bottom: 2px;
             content: "";
-            width: 40px;
+            width: 45px;
             height: 4px;
             background-color: $color-tertiary;
         }
@@ -142,13 +142,13 @@
         gap: 2%;
         white-space: nowrap;
         overflow: hidden;
-        text-overflow: ellipsis;
+        text-overflow: ellipsis; // affiche une ellipse '...' pour représenter le texte rogné
     }
 
     &__description {
         white-space: nowrap;
         overflow: hidden;
-        text-overflow: ellipsis;
+        text-overflow: ellipsis; 
         width: 100%;
         padding: 5px;
 
@@ -206,6 +206,5 @@
         }
     }
 }
-
 
 
