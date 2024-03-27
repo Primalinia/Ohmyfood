@@ -192,10 +192,11 @@ a {
     @include object-shadow;
     cursor: pointer;
     margin: 27px 75px 57px 82px;
-    transition: opacity 300ms ease-in-out;
+    transition: opacity 400ms ease-in-out;
 
     &:hover {
-        opacity: 0.88;
+        transform: scale(1.02);
+        opacity: 0.83;
         @include object-shadow(darken($shadow, 15%));
     }
 
@@ -250,7 +251,7 @@ a {
     @include huge__responsive {
         width: 30%;
     }
-
+    
     &:hover {
         background-color: lighten($color-primary, 35%);
         @include object-shadow(darken($shadow, 10%));
