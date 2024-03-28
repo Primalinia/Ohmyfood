@@ -374,7 +374,7 @@ a {
   font-weight: 900;
   font-size: 40px;
   content: "\f578";
-  color: #ffffff;
+  color: #99E2D0;
   transform: translateY(-150px);
   animation: icons-appearing 610ms both;
 }
@@ -424,7 +424,7 @@ a {
   font-weight: 900;
   font-size: 40px;
   content: "\f5d1";
-  color: #ffffff;
+  color: #FF79DA;
   transform: translateY(-150px);
   animation: icons-appearing 610ms 1830ms both;
 }
@@ -653,7 +653,7 @@ a {
   justify-content: center;
   text-align: center;
   position: relative;
-  left: -19px;
+  left: -13px;
   bottom: -5px;
   height: 24px;
   width: 24px;

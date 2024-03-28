@@ -130,7 +130,7 @@
                 font-weight: 900;
                 font-size: 40px;
                 content: "\f578";
-                color: $white;
+                color: $color-tertiary;
                 transform: translateY(-150px);
                 animation: icons-appearing $icons-delay both;
             }
@@ -184,7 +184,8 @@
                 font-weight: 900;
                 font-size: 40px;
                 content: "\f5d1";
-                color: $white;
+                color: $color-secondary;
+
                 transform: translateY(-150px);
                 animation: icons-appearing $icons-delay $icons-delay*3 both;
             }

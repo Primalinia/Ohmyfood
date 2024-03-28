@@ -13,7 +13,7 @@ $black: #353535;
 $LightGray: #F6F6F6;
 $icon: #7E7E7E;
 
-//* Texte classic
+//* Texte général
 /**** font weight ****/
 $font-weight: (
     light: 300,
@@ -34,7 +34,7 @@ $font-weight: (
     font-size: 27px;
     font-family: "Shrikhand",cursive;
 }
-/**** title d'en tête ****/
+/**** titre d'en tête ****/
 @mixin title__heading {
     font-size: 24px;
     line-height: 1;

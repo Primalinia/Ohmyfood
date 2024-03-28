@@ -12,6 +12,6 @@ Le travail est centré sur l'intrégration d'une maquette en Mobile first / Tabl
 Technologie utilisée:
 Ce project a été construit en HTML5 et CSS3 et utilise le préprocesseur suivant :
 
-➡️ Sass(v1.71.1 ou ultérieure)
+➡️ Sass(v1.71.1)
 
-npm run sass ecrire dans le terminal a chaque fois que j'ouvre le projet
+npm run sass (ecrire dans le terminal a chaque fois que j'ouvre le projet)
