@@ -70,7 +70,7 @@
     animation-timing-function: linear;
   }
 }
-/* Courses apparition */
+/* Apparrition Menu */
 @keyframes fade-in {
   0% {
     transform: translateY(20px);
@@ -127,13 +127,13 @@
   opacity: 0;
 }
 
-/* CSS pour les éléments de plat */
+/*  éléments de plat */
 .race-list:nth-child(2) .race-cards {
   animation: appearPlat 5.5s ease forwards;
   opacity: 0;
 }
 
-/* CSS pour les éléments de dessert */
+/*  éléments de dessert */
 .race-list:nth-child(3) .race-cards {
   animation: appearDessert 9.5s ease forwards;
   opacity: 0;
@@ -641,6 +641,7 @@ a {
   }
 }
 .functioning__step:hover {
+  opacity: 0.65;
   background-color: #f2eafb;
   box-shadow: 0 4px 10px 0 #bcbcbc;
 }

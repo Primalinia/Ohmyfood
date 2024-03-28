@@ -4,7 +4,7 @@
 /**** Logo ****/
 @mixin cursive__logo {
     font-size: 27px;
-    font-family: "Shrikhand",cursive;
+    font-family: 'Shrikhand',cursive;
 }
 /**** titre d'en tête ****/
 @mixin title__heading {
@@ -16,7 +16,6 @@
 @mixin huge__responsive {
     font-size: 32px;
 }
-
 
 /**** cercle ****/
 @mixin circle {
