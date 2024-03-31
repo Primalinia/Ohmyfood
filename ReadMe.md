@@ -4,7 +4,7 @@
 
 Description:
 
-La Startup "OhMyFood" souhaite s'imposer sur le marché de la gastronomie. Le site permettra à ses utilisateurs de visionner des menus, réserver une table dans un restaurant gastronomique de leur choix. Les clients pourront également selectionner leurs menus à l'avance, ce qui reduira leur temps d'attente sur place.
+La Startup "OhMyFood" souhaite s'imposer sur le marché de la gastronomie. Le site permettra à ses utilisateurs de composer leurs menus, effectuer une réservation dans un restaurant gastronomique de leur choix. Les clients pourront également selectionner leurs menus à l'avance, ce qui reduira leur temps d'attente sur place.
 Ce projet est centré sur l'intrégration d'une maquette en Mobile first / Tablette / Desktop, avec la réalisation d'animations en CSS et l'utilisation de Sass.
 
 Technologie utilisée:

@@ -38,13 +38,11 @@
             width: 400px;
             height: 41px;
             justify-content: center;
+            
+            @include huge__responsive
         }
 
-        @include huge__responsive {
-            width: 400px;
-            height: 41px;
-            justify-content: center;
-        }
+        
 
         & h2 {
             width: 87%;

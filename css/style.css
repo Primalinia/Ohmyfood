@@ -202,11 +202,10 @@
 }
 .button__like:hover::after {
   z-index: 1;
-  animation: heart-fill 900ms forwards cubic-bezier(0.65, 1.01, 0.98, 1.06);
+  animation: heart-fill 900ms forwards cubic-bezier(0.65, 1, 0.98, 1);
 }
 .button__like::after {
   z-index: -1;
-  animation: heart-fill 900ms forwards cubic-bezier(1.06, 0.98, 1.01, 0.65);
   opacity: 0;
   position: absolute;
   top: 0;
@@ -401,13 +400,6 @@
   margin: auto;
 }
 @media all and (min-width: 768px) {
-  .slight__heading {
-    width: 400px;
-    height: 41px;
-    justify-content: center;
-  }
-}
-@media all and (min-width: 1024px) and (max-width: 1920px) {
   .slight__heading {
     width: 400px;
     height: 41px;
