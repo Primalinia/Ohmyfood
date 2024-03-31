@@ -611,7 +611,7 @@ body {
   justify-content: center;
   align-items: center;
   background-color: #ebebeb;
-  box-shadow: inset 0 10px 8px -5px #d5d5d5;
+  box-shadow: inset 0 -12px 10px 0px #d5d5d5;
   gap: 17px;
 }
 
