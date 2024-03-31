@@ -1,6 +1,12 @@
-@import 'pages/_index.scss';
-@import 'utils/_mixins.scss';
-@import 'components/_buttons.scss';
-@import 'components/_loading-spinner.scss';
-@import 'utils/_animations.scss';
-@import 'pages/_pages-menu.scss';
+// Importation des utilitaires tels que les variables, les mixins et les animations
+@import './utils/_variables.scss';
+@import './utils/_mixins.scss';
+@import './utils/_animations.scss';
+
+// Importation des styles des composants, comme les boutons et le spinner de chargement
+@import './components/_buttons.scss';
+@import './components/_loading-spinner.scss';
+
+// Importation des styles spécifiques aux pages, comme le menu des pages et la page d'accueil
+@import './pages/_pages-menu.scss';
+@import './pages/_index.scss';

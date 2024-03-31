@@ -1,15 +1,15 @@
 @charset "UTF-8";
-/**** color ****/
+/**** Width ****/
+/**** Couleurs ****/
+/**** font weight ****/
 /* Gradient */
-/**** Degree Gradient ****/
-/**** width ****/
+/* Degree Gradient */
 /* Loading spinner animation delay */
-/**** Responsive ****/
+/**** Logo ****/
+/**** titre d'en tête ****/
 /**** cercle ****/
 /**** Shadow ****/
 /**** gradient ****/
-/**** Responsive ****/
-/* Loading */
 @keyframes loading-appear {
   50% {
     opacity: 0.95;
@@ -70,7 +70,6 @@
     animation-timing-function: linear;
   }
 }
-/* Apparrition Menu */
 @keyframes fade-in {
   0% {
     transform: translateY(20px);
@@ -95,7 +94,6 @@
   animation: fade-in 2s 1000ms both;
 }
 
-/* Heart fill */
 @keyframes heart-fill {
   0% {
     opacity: 0;
@@ -121,25 +119,21 @@
     transform: scale(1);
   }
 }
-/* CSS pour les éléments d'entrée */
 .race-list:nth-child(1) .race-cards {
   animation: appearEntrance 1.5s ease forwards;
   opacity: 0;
 }
 
-/*  éléments de plat */
 .race-list:nth-child(2) .race-cards {
   animation: appearPlat 5.5s ease forwards;
   opacity: 0;
 }
 
-/*  éléments de dessert */
 .race-list:nth-child(3) .race-cards {
   animation: appearDessert 9.5s ease forwards;
   opacity: 0;
 }
 
-/* Animation pour les éléments d'entrée */
 @keyframes appearEntrance {
   0% {
     opacity: 0;
@@ -150,7 +144,6 @@
     transform: translateY(0);
   }
 }
-/* Animation pour les éléments de plat */
 @keyframes appearPlat {
   0% {
     opacity: 0;
@@ -161,7 +154,6 @@
     transform: translateY(0);
   }
 }
-/* Animation pour les éléments de dessert */
 @keyframes appearDessert {
   0% {
     opacity: 0;
@@ -172,22 +164,6 @@
     transform: translateY(0);
   }
 }
-* {
-  box-sizing: border-box;
-}
-
-* {
-  font-family: "Roboto", sans-serif;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-/**** font weight ****/
-/**** set-logo ****/
-/**** title d'en tête ****/
 .hero__btngradient {
   width: 218px;
   height: 50px;
@@ -200,11 +176,10 @@ a {
   box-shadow: 0 4px 10px 0 #d5d5d5;
   cursor: pointer;
   margin: 27px 75px 57px 82px;
-  transition: opacity 400ms ease-in-out;
+  transition: opacity 300ms ease-in-out;
 }
 .hero__btngradient:hover {
-  transform: scale(1.02);
-  opacity: 0.83;
+  opacity: 0.88;
   box-shadow: 0 4px 10px 0 #afafaf;
 }
 .hero__btngradient--long {
@@ -231,7 +206,7 @@ a {
 }
 .button__like::after {
   z-index: -1;
-  animation: heart-fill 900ms forwards cubic-bezier(1.06,0.98,1.01,0.65);
+  animation: heart-fill 900ms forwards cubic-bezier(1.06, 0.98, 1.01, 0.65);
   opacity: 0;
   position: absolute;
   top: 0;
@@ -244,8 +219,7 @@ a {
   content: "\f004";
   color: transparent;
   background: linear-gradient(357deg, #9356DC, #FF79DA);
-  -webkit-background-clip: text;
-          background-clip: text;
+  background-clip: text;
   transform-origin: bottom;
   -webkit-text-stroke: 1px;
 }
@@ -357,7 +331,7 @@ a {
 .loading-spinner__plate__fork img {
   height: 100%;
 }
-.loading-spinner__plate__food12 {
+.loading-spinner__plate__food14 {
   width: 25%;
   height: 25%;
   z-index: 1;
@@ -365,7 +339,7 @@ a {
   align-items: center;
   justify-content: center;
 }
-.loading-spinner__plate__food12::before {
+.loading-spinner__plate__food14::before {
   position: absolute;
   top: 35%;
   right: 31%;
@@ -378,7 +352,7 @@ a {
   transform: translateY(-150px);
   animation: icons-appearing 610ms both;
 }
-.loading-spinner__plate__food12::after {
+.loading-spinner__plate__food14::after {
   width: auto;
   height: auto;
   z-index: 1;
@@ -429,24 +403,234 @@ a {
   animation: icons-appearing 610ms 1830ms both;
 }
 
-.body {
+.page__restaurant--img {
+  position: relative;
+  width: 100%;
+  height: 250px;
+}
+@media all and (min-width: 1024px) and (max-width: 1920px) {
+  .page__restaurant--img {
+    height: 400px;
+  }
+}
+.page__restaurant--img img {
+  width: 100%;
+  height: 107%;
+  object-fit: cover;
+}
+
+.slight {
+  position: relative;
+  background-color: #f0f0f0;
+  border-radius: 25px 25px 0px 0px;
+  padding: 2% 5% 5% 5%;
+  z-index: 0;
+}
+@media all and (min-width: 1024px) and (max-width: 1920px) {
+  .slight {
+    max-width: 1024px;
+    margin: auto;
+  }
+}
+.slight__heading {
+  display: flex;
+  align-items: center;
+  margin: auto;
+}
+@media all and (min-width: 768px) {
+  .slight__heading {
+    width: 400px;
+    height: 41px;
+    justify-content: center;
+  }
+}
+@media all and (min-width: 1024px) and (max-width: 1920px) {
+  .slight__heading {
+    width: 400px;
+    height: 41px;
+    justify-content: center;
+  }
+}
+.slight__heading h2 {
+  width: 87%;
+  font-size: 27px;
+  font-family: "Shrikhand", cursive;
+}
+@media all and (min-width: 1024px) and (max-width: 1920px) {
+  .slight__heading h2 {
+    display: flex;
+    font-size: 40px;
+    width: 95%;
+  }
+}
+@media all and (min-width: 768px) {
+  .slight__heading h2 {
+    display: flex;
+    font-size: 35px;
+    width: 95%;
+  }
+}
+@media all and (min-width: 1024px) and (max-width: 1920px) {
+  .slight__container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+}
+.slight__orderbtn {
+  display: flex;
+  justify-content: center;
+}
+
+.race-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+@media all and (min-width: 768px) {
+  .race-list {
+    width: 100%;
+  }
+}
+.race-list__heading {
+  position: relative;
+  margin: 4% 0% 2% 0%;
+  padding: 10px 0px;
+  font-size: 18px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+@media all and (min-width: 1024px) and (max-width: 1920px) {
+  .race-list__heading {
+    font-size: 22px;
+  }
+}
+.race-list__heading::after {
+  display: block;
+  position: absolute;
+  bottom: 2px;
+  content: "";
+  width: 45px;
+  height: 4px;
+  background-color: #99E2D0;
+}
+
+.race-cards {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 10px 0px;
+  padding: 0;
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px 0 #d5d5d5;
+  overflow: hidden;
+  cursor: pointer;
+}
+.race-cards:hover > .race-cards__checkout {
+  margin-right: 0px;
+}
+.race-cards:hover > .race-cards__checkout::after {
+  transform: rotate(360deg);
+}
+.race-cards__info {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  width: 100%;
+  margin: 2%;
+  gap: 2%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; 
+}
+.race-cards__description {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+  padding: 5px;
+}
+.race-cards__description h4 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 500;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; 
+}
+.race-cards__description p {
+  margin: 0;
+  font-weight: 300;
+  font-size: 15px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.race-cards__price {
+  display: flex;
+  align-items: flex-end;
+  width: 15%;
+  padding: 5px;
+}
+.race-cards__price p {
+  margin: 0;
+  font-weight: 500;
+}
+.race-cards__checkout {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  width: 20%;
+  margin-right: -20%;
+  border-radius: 0px 15px 15px 0px;
+  background-color: #99E2D0;
+  transition: margin-right 800ms cubic-bezier(0.63, 1.23, 0.96, 0.92);
+}
+.race-cards__checkout::after {
+  display: inline-block;
+  margin: auto;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 25px;
+  content: "\f058";
+  color: #ffffff;
+  transition: transform 800ms cubic-bezier(0.63, 1.23, 0.96, 0.92);
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
   width: 100%;
   margin: auto;
 }
 
-.header {
+header {
   padding: 2%;
+  box-shadow: inset 0px -10px 7px -6px #d5d5d5;
+  /** ARROW **/
 }
-.header__logo {
+header__logo {
   margin: 0;
   text-align: center;
   font-size: 27px;
   font-family: "Shrikhand", cursive;
 }
-.header__withorrow {
+header__withorrow {
   position: relative;
 }
-.header__goback {
+header__goback {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -457,86 +641,6 @@ a {
   top: 35%;
   font-size: 20px;
 }
-@media all and (min-width: 1024px) {
-  .header__goback {
-    font-size: 32px;
-  }
-}
-
-.footer {
-  width: 100%;
-  padding: 22px 25px;
-  background-color: #404040;
-  color: #ffffff;
-}
-@media all and (min-width: 768px) {
-  .footer {
-    display: flex;
-    align-items: center;
-    flex-direction: row-reverse;
-    justify-content: flex-start;
-    height: 114px;
-    gap: 16px;
-  }
-}
-.footer p {
-  margin: 5px 0;
-}
-.footer__logo {
-  margin: 0 0 16px 0;
-  font-size: 27px;
-  font-family: "Shrikhand", cursive;
-  font-size: 18px;
-}
-@media all and (min-width: 1024px) {
-  .footer__logo {
-    width: 137px;
-    margin: 0;
-  }
-}
-@media all and (min-width: 768px) {
-  .footer__logo {
-    width: 137px;
-    margin: 0;
-  }
-}
-.footer__bloc {
-  display: flex;
-  flex-direction: column;
-}
-@media all and (min-width: 768px) {
-  .footer__bloc {
-    flex-direction: row;
-    align-items: center;
-    gap: 7px;
-  }
-}
-.footer__nav {
-  display: flex;
-  align-items: center;
-  font-weight: 500;
-  gap: 7px;
-}
-@media all and (min-width: 768px) {
-  .footer__nav {
-    width: 190px;
-  }
-}
-.footer__nav--icons {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 16px;
-  height: 13px;
-  font-size: 13px;
-}
-@media all and (min-width: 768px) {
-  .footer__nav--info p {
-    width: 130px;
-    height: 20px;
-  }
-}
-
 .info__location {
   display: flex;
   height: 50px;
@@ -591,10 +695,35 @@ a {
   font-weight: 700;
 }
 .hero p {
-  width: 85%;
+  width: 86%;
   margin: 0;
   font-size: 18px;
   font-weight: 300;
+}
+
+.hero__btngradient {
+  width: 218px;
+  height: 50px;
+  color: #ffffff;
+  font-size: 16px;
+  background: linear-gradient(357deg, #9356DC, #FF79DA);
+  border-radius: 25px;
+  border: none;
+  font-weight: 500;
+  box-shadow: 0 4px 10px 0 #d5d5d5;
+  cursor: pointer;
+  margin: 27px 75px 57px 82px;
+  transition: opacity 400ms ease-in-out;
+}
+.hero__btngradient:hover {
+  transform: scale(1.02);
+  opacity: 0.83;
+  box-shadow: 0 4px 10px 0 #afafaf;
+}
+.hero__btngradient--long {
+  width: 50%;
+  min-width: 150px;
+  max-width: 250px;
 }
 
 .functioning {
@@ -616,7 +745,7 @@ a {
   padding-bottom: 10px;
   margin: auto;
 }
-@media all and (min-width: 1024px) {
+@media all and (min-width: 1024px) and (max-width: 1920px) {
   .functioning__list {
     width: 98%;
     flex-direction: row;
@@ -635,7 +764,7 @@ a {
   background-color: #f6f6f6;
   box-shadow: 0 4px 10px 0 #d5d5d5;
 }
-@media all and (min-width: 1024px) {
+@media all and (min-width: 1024px) and (max-width: 1920px) {
   .functioning__step {
     width: 30%;
   }
@@ -733,8 +862,7 @@ a {
 .restaurant__cards--img img {
   width: 100%;
   height: 175px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .restaurant__cards--img--markerinfo {
   display: flex;
@@ -781,201 +909,79 @@ a {
   font-size: 25px;
 }
 
-.page__restaurant--img {
-  position: relative;
+.footer {
   width: 100%;
-  height: 250px;
-}
-@media all and (min-width: 1024px) {
-  .page__restaurant--img {
-    height: 400px;
-  }
-}
-.page__restaurant--img img {
-  width: 100%;
-  height: 107%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.slight {
-  position: relative;
-  background-color: #f0f0f0;
-  border-radius: 25px 25px 0px 0px;
-  padding: 2% 5% 5% 5%;
-  z-index: 0;
-}
-@media all and (min-width: 1024px) {
-  .slight {
-    max-width: 1024px;
-    margin: auto;
-  }
-}
-.slight__heading {
-  display: flex;
-  align-items: center;
-  margin: auto;
+  padding: 22px 25px;
+  background-color: #404040;
+  color: #ffffff;
 }
 @media all and (min-width: 768px) {
-  .slight__heading {
-    width: 400px;
-    height: 41px;
-    justify-content: center;
+  .footer {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    height: 114px;
+    gap: 16px;
   }
 }
-@media all and (min-width: 1024px) {
-  .slight__heading {
-    width: 400px;
-    height: 41px;
-    justify-content: center;
-  }
+.footer p {
+  margin: 5px 0;
 }
-.slight__heading h2 {
-  width: 87%;
+.footer__logo {
+  margin: 0 0 16px 0;
   font-size: 27px;
   font-family: "Shrikhand", cursive;
+  font-size: 18px;
 }
-@media all and (min-width: 1024px) {
-  .slight__heading h2 {
-    display: flex;
-    font-size: 40px;
-    width: 95%;
+@media all and (min-width: 1024px) and (max-width: 1920px) {
+  .footer__logo {
+    width: 137px;
+    margin: 0;
   }
 }
 @media all and (min-width: 768px) {
-  .slight__heading h2 {
-    display: flex;
-    font-size: 35px;
-    width: 95%;
+  .footer__logo {
+    width: 137px;
+    margin: 0;
   }
 }
-@media all and (min-width: 1024px) {
-  .slight__container {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-between;
-  }
-}
-.slight__orderbtn {
-  display: flex;
-  justify-content: center;
-}
-
-.race-list {
+.footer__bloc {
   display: flex;
   flex-direction: column;
-  justify-content: center;
 }
 @media all and (min-width: 768px) {
-  .race-list {
-    width: 100%;
+  .footer__bloc {
+    flex-direction: row;
+    align-items: center;
+    gap: 7px;
   }
 }
-.race-list__heading {
-  position: relative;
-  margin: 4% 0% 2% 0%;
-  padding: 10px 0px;
-  font-size: 18px;
-  font-weight: 300;
-  text-transform: uppercase;
-}
-@media all and (min-width: 1024px) {
-  .race-list__heading {
-    font-size: 22px;
-  }
-}
-.race-list__heading::after {
-  display: block;
-  position: absolute;
-  bottom: 2px;
-  content: "";
-  width: 40px;
-  height: 4px;
-  background-color: #99E2D0;
-}
-
-.race-cards {
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  margin: 10px 0px;
-  padding: 0;
-  background-color: #ffffff;
-  border-radius: 15px;
-  box-shadow: 0 4px 10px 0 #d5d5d5;
-  overflow: hidden;
-  cursor: pointer;
-}
-.race-cards:hover > .race-cards__checkout {
-  margin-right: 0px;
-}
-.race-cards:hover > .race-cards__checkout::after {
-  transform: rotate(360deg);
-}
-.race-cards__info {
-  display: flex;
-  flex: 1;
-  justify-content: space-between;
-  width: 100%;
-  margin: 2%;
-  gap: 2%;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-.race-cards__description {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  width: 100%;
-  padding: 5px;
-}
-.race-cards__description h4 {
-  margin: 0;
-  font-size: 16px;
-  font-weight: 500;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-.race-cards__description p {
-  margin: 0;
-  font-weight: 300;
-  font-size: 15px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-.race-cards__price {
-  display: flex;
-  align-items: flex-end;
-  width: 15%;
-  padding: 5px;
-}
-.race-cards__price p {
-  margin: 0;
-  font-weight: 500;
-}
-.race-cards__checkout {
+.footer__nav {
   display: flex;
   align-items: center;
-  justify-content: center;
-  height: auto;
-  width: 20%;
-  margin-right: -20%;
-  border-radius: 0px 15px 15px 0px;
-  background-color: #99E2D0;
-  transition: margin-right 800ms cubic-bezier(0.63, 1.23, 0.96, 0.92);
+  padding-left: 39px;
+  font-weight: 500;
+  gap: 7px;
 }
-.race-cards__checkout::after {
-  display: inline-block;
-  margin: auto;
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  font-size: 25px;
-  content: "\f058";
-  color: #ffffff;
-  transition: transform 800ms cubic-bezier(0.63, 1.23, 0.96, 0.92);
-}/*# sourceMappingURL=style.css.map */
+@media all and (min-width: 768px) {
+  .footer__nav {
+    width: 190px;
+  }
+}
+.footer__nav--icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 16px;
+  height: 13px;
+  font-size: 13px;
+}
+@media all and (min-width: 768px) {
+  .footer__nav--info p {
+    width: 130px;
+    height: 20px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

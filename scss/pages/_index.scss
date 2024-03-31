@@ -1,4 +1,6 @@
 
+
+
 //* GENERAL
 * {
     box-sizing: border-box;
@@ -10,7 +12,7 @@ a {
     color: inherit;
 }
 
-.body {
+body {
     width: 100%;
     margin: auto;
 }
@@ -22,7 +24,9 @@ a {
     &__logo {
         margin: 0;
         text-align: center;
+
         @include cursive__logo;
+        @include header__logo
     }
 
     /** ARROW **/
@@ -80,7 +84,7 @@ a {
         top: 50%;
         transform: translateY(-50%);
         color: $black;
-        pointer-events: none;
+        pointer-events: none;  // l'élément ne réagira pas aux événements de pointeur
     }
     .info__city:focus + .placeholder {
         display: none;
@@ -103,6 +107,7 @@ a {
         width: 70%;
         margin: 10px 0;
         @include title__heading;
+        @include hero__title;
     }
 
     & p {
@@ -184,14 +189,18 @@ a {
     @include huge__responsive {
         width: 30%;
     }
+
+    &>.fa-store:before {  
+        content: "\f54e";
+        color: #9356DC; // Icone viollet
+    }
     
     &:hover {
-        opacity: 0.65;
-        background-color: lighten($color-primars, 35%);
+        opacity: 0.75;
         @include object-shadow(darken($shadow, 10%));
 
         &>.functioning__step--icon {
-            color: $color-primary;
+            color: $icon;
         }
     }
     
@@ -341,6 +350,8 @@ a {
         right: 7%;
         font-size: 25px;
     }
+
+    
 }
 
 
@@ -349,7 +360,7 @@ a {
 
 .footer {
     width: 100%;
-    padding: 22px 25px;
+    padding: 22px 16px;
     background-color: darken($white, 75%);
     color: $white;
 
@@ -359,26 +370,16 @@ a {
         flex-direction: row-reverse;
         justify-content: flex-start;
         height: 114px;
-        gap: 16px;
+        gap: 14px;
     }
 
     & p {
+        font-size: 16px;
         margin: 5px 0;
     }
 
     &__logo {
-        margin: 0 0 16px 0;
-        @include cursive__logo;
-        font-size: 18px;
-
-        @include huge__responsive {
-            width: 137px;
-            margin: 0;
-        }
-        @include large__responsive {
-            width: 137px;
-            margin: 0;
-        }
+        @include footer__logo;
     }
 
     &__bloc {
@@ -395,11 +396,12 @@ a {
     &__nav {
         display: flex;
         align-items: center;
+        
         font-weight: map-get($font-weight, medium);
         gap: 7px;
 
         @include large__responsive {
-            width: 190px;
+            width: 188px;
         }
 
         &--icons {
@@ -415,7 +417,7 @@ a {
 
             @include large__responsive {
                & p {
-                   width: 130px;
+                   width: 122px;
                    height: 20px;
                }
            }
@@ -424,8 +426,4 @@ a {
 }
 
 
-//*** RESPONSIVE TABLETS AND DESKTOP **//
-$breakpoints: (
-    large: 768px,  // Tablet
-    huge: 1024px,  // Desktop
-)
+

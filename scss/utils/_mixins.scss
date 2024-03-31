@@ -43,7 +43,7 @@
 }
 
 @mixin huge__responsive {
-    @media all and (min-width: map-get($breakpoints, huge)) {
+    @media all and (min-width: map-get($breakpoints, huge)) and (max-width: map-get($breakpoints, max-huge)) {
         @content
     }
     

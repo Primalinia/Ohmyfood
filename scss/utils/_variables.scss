@@ -34,3 +34,9 @@ $degree: 357deg;
 /* Loading spinner animation delay */
 $icons-delay: 610ms;
 
+//*** RESPONSIVE TABLETS AND DESKTOP **//
+$breakpoints: (
+    large: 768px,  // Tablet
+    huge: 1024px,  // Desktop
+    max-huge: 1920px, // Maximun en Desktop
+)
