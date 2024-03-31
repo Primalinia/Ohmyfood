@@ -1,4 +1,4 @@
-//* Variables
+
 /**** Width ****/
 $whiteMedium: 90%;
 
@@ -22,7 +22,9 @@ $font-weight: (
     bold: 700,
 );
 
-//* A FAIIIRRRRREEE ! */
+
+
+
 /* Gradient */
 $gradient-loader : linear-gradient(to top, lighten($color-primary, 10%), $color-secondary, transparent, transparent);
 
@@ -34,7 +36,7 @@ $degree: 357deg;
 /* Loading spinner animation delay */
 $icons-delay: 610ms;
 
-//*** RESPONSIVE TABLETS AND DESKTOP **//
+//*** RESPONSIVE TABLETS AND DESKTOP *//
 $breakpoints: (
     large: 768px,  // Tablet
     huge: 1024px,  // Desktop

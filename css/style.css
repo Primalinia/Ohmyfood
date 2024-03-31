@@ -268,7 +268,7 @@
   position: absolute;
   width: 290px;
   height: 290px;
-  background-color: #e6e6e6;
+  background-color: #99E2D0;
   border-radius: 50%;
 }
 .loading-spinner__plate {
@@ -331,43 +331,6 @@
 .loading-spinner__plate__fork img {
   height: 100%;
 }
-.loading-spinner__plate__food14 {
-  width: 25%;
-  height: 25%;
-  z-index: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.loading-spinner__plate__food14::before {
-  position: absolute;
-  top: 35%;
-  right: 31%;
-  display: inline-block;
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  font-size: 40px;
-  content: "\f578";
-  color: #99E2D0;
-  transform: translateY(-150px);
-  animation: icons-appearing 610ms both;
-}
-.loading-spinner__plate__food14::after {
-  width: auto;
-  height: auto;
-  z-index: 1;
-  position: absolute;
-  top: 35%;
-  right: 30%;
-  display: inline-block;
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  font-size: 40px;
-  content: "\f7ec";
-  color: #ffffff;
-  transform: translateY(-150px);
-  animation: icons-appearing 610ms 610ms both;
-}
 .loading-spinner__plate__food34 {
   width: 25%;
   height: 25%;
@@ -384,8 +347,8 @@
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   font-size: 40px;
-  content: "\f7ef";
-  color: #ffffff;
+  content: "\f578";
+  color: #99E2D0;
   transform: translateY(-150px);
   animation: icons-appearing 610ms 1220ms both;
 }
@@ -397,7 +360,7 @@
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   font-size: 40px;
-  content: "\f5d1";
+  content: "\f7ef";
   color: #FF79DA;
   transform: translateY(-150px);
   animation: icons-appearing 610ms 1830ms both;
@@ -453,8 +416,8 @@
 }
 .slight__heading h2 {
   width: 87%;
-  font-size: 27px;
-  font-family: "Shrikhand", cursive;
+  font-size: 18px;
+  font-family: "shrikhand";
 }
 @media all and (min-width: 1024px) and (max-width: 1920px) {
   .slight__heading h2 {
@@ -544,7 +507,7 @@
   gap: 2%;
   white-space: nowrap;
   overflow: hidden;
-  text-overflow: ellipsis; 
+  text-overflow: ellipsis;
 }
 .race-cards__description {
   white-space: nowrap;
@@ -559,7 +522,7 @@
   font-weight: 500;
   white-space: nowrap;
   overflow: hidden;
-  text-overflow: ellipsis; 
+  text-overflow: ellipsis;
 }
 .race-cards__description p {
   margin: 0;
@@ -616,21 +579,22 @@ body {
   margin: auto;
 }
 
-header {
+.header {
   padding: 2%;
   box-shadow: inset 0px -10px 7px -6px #d5d5d5;
   /** ARROW **/
 }
-header__logo {
+.header__logo {
   margin: 0;
   text-align: center;
-  font-size: 27px;
-  font-family: "Shrikhand", cursive;
+  font-size: 18px;
+  font-family: "shrikhand";
+  font-size: 32px;
 }
-header__withorrow {
+.header__withorrow {
   position: relative;
 }
-header__goback {
+.header__goback {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -693,6 +657,7 @@ header__goback {
   font-size: 24px;
   line-height: 1;
   font-weight: 700;
+  font-size: 40px;
 }
 .hero p {
   width: 86%;
@@ -769,13 +734,16 @@ header__goback {
     width: 30%;
   }
 }
+.functioning__step > .fa-store:before {
+  content: "\f54e";
+  color: #9356DC;
+}
 .functioning__step:hover {
-  opacity: 0.65;
-  background-color: #f2eafb;
+  opacity: 0.75;
   box-shadow: 0 4px 10px 0 #bcbcbc;
 }
 .functioning__step:hover > .functioning__step--icon {
-  color: #9356DC;
+  color: #7E7E7E;
 }
 .functioning__step--number {
   display: flex;
@@ -911,7 +879,7 @@ header__goback {
 
 .footer {
   width: 100%;
-  padding: 22px 25px;
+  padding: 22px 16px;
   background-color: #404040;
   color: #ffffff;
 }
@@ -922,29 +890,16 @@ header__goback {
     flex-direction: row-reverse;
     justify-content: flex-start;
     height: 114px;
-    gap: 16px;
+    gap: 14px;
   }
 }
 .footer p {
+  font-size: 16px;
   margin: 5px 0;
 }
 .footer__logo {
-  margin: 0 0 16px 0;
-  font-size: 27px;
-  font-family: "Shrikhand", cursive;
   font-size: 18px;
-}
-@media all and (min-width: 1024px) and (max-width: 1920px) {
-  .footer__logo {
-    width: 137px;
-    margin: 0;
-  }
-}
-@media all and (min-width: 768px) {
-  .footer__logo {
-    width: 137px;
-    margin: 0;
-  }
+  font-family: "shrikhand";
 }
 .footer__bloc {
   display: flex;
@@ -960,13 +915,12 @@ header__goback {
 .footer__nav {
   display: flex;
   align-items: center;
-  padding-left: 39px;
   font-weight: 500;
   gap: 7px;
 }
 @media all and (min-width: 768px) {
   .footer__nav {
-    width: 190px;
+    width: 188px;
   }
 }
 .footer__nav--icons {
@@ -979,7 +933,7 @@ header__goback {
 }
 @media all and (min-width: 768px) {
   .footer__nav--info p {
-    width: 130px;
+    width: 122px;
     height: 20px;
   }
 }

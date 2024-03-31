@@ -6,7 +6,7 @@
     @include gradient;
     border-radius: 25px;
     border: none;
-    font-weight: map-get($font-weight, medium );
+    font-weight: map-get($font-weight, medium ); 
     @include object-shadow;
     cursor: pointer;
     margin: 27px 75px 57px 82px;

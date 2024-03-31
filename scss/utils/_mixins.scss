@@ -1,11 +1,26 @@
+
+
+
 //* Mixin
 /// Headings
 
 /**** Logo ****/
+
 @mixin cursive__logo {
-    font-size: 27px;
-    font-family: 'Shrikhand',cursive;
+    font-size: 18px;
+    font-family: 'shrikhand';
 }
+
+@mixin footer__logo {
+    @include cursive__logo;  
+    @include large__responsive;
+    @include huge__responsive;
+}
+
+@mixin header__logo {
+    font-size: 32px;
+}
+
 /**** titre d'en tête ****/
 @mixin title__heading {
     font-size: 24px;
@@ -13,8 +28,19 @@
     font-weight: map-get($font-weight,bold);
 }
 
+@mixin large__responsive {
+    width: 137px;
+    margin: 0;
+}
+
 @mixin huge__responsive {
     font-size: 32px;
+    width: 137px;
+    margin: 0;
+}
+
+@mixin hero__title {
+    font-size: 40px;
 }
 
 /**** cercle ****/
@@ -42,9 +68,9 @@
     }
 }
 
+
 @mixin huge__responsive {
     @media all and (min-width: map-get($breakpoints, huge)) and (max-width: map-get($breakpoints, max-huge)) {
-        @content
-    }
-    
+        @content 
+    } 
 }

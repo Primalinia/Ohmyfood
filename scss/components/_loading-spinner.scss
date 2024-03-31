@@ -1,3 +1,5 @@
+
+
 .loading-spinner-container {
     position: fixed;
     height: 100%;
@@ -8,8 +10,8 @@
     right: 0;
     background-color: $white;
     opacity: 0.95;
-    animation: loading-appear 4s both ease-in-out;
-    z-index: 21;
+    animation: loading-appear 4s both ease-in-out; // Effet de transition avec un début et une fin lente
+    z-index: 21;        // spécifie l'ordre de pile d'un élément ( le plus élevé apparait en premier)
     display: flex;
     align-items: center;
     justify-content: center;
@@ -43,7 +45,7 @@
         position: absolute;
         width: 290px;
         height: 290px;
-        background-color: darken($white, 10%);
+        background-color: $color-tertiary;
         @include circle;
     }
 
@@ -113,46 +115,6 @@
             }
         }
 
-        &__food14 {
-            width: 25%;
-            height: 25%;
-            z-index: 1;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-
-            &::before {
-                position: absolute;
-                top: 35%;
-                right: 31%;
-                display: inline-block;
-                font-family: "Font Awesome 5 Free";
-                font-weight: 900;
-                font-size: 40px;
-                content: "\f578";
-                color: $color-tertiary;
-                transform: translateY(-150px);
-                animation: icons-appearing $icons-delay both;
-            }
-
-            &::after {
-                width: auto;
-                height: auto;
-                z-index: 1;
-                position: absolute;
-                top: 35%;
-                right: 30%;
-                display: inline-block;
-                font-family: "Font Awesome 5 Free";
-                font-weight: 900;
-                font-size: 40px;
-                content: "\f7ec";
-                color: $white;
-                transform: translateY(-150px);
-                animation: icons-appearing $icons-delay $icons-delay both;
-            }
-        }
-
         &__food34 {
             width: 25%;
             height: 25%;
@@ -169,9 +131,9 @@
                 font-family: "Font Awesome 5 Free";
                 font-weight: 900;
                 font-size: 40px;
-                content: "\f7ef";
-                color: $white;
-                transform: translateY(-150px);
+                content: "\f578";
+                color: $color-tertiary;
+                transform: translateY(-150px);  // Déplacement vertival (axe y)
                 animation: icons-appearing $icons-delay $icons-delay*2 both;
             }
 
@@ -183,7 +145,7 @@
                 font-family: "Font Awesome 5 Free";
                 font-weight: 900;
                 font-size: 40px;
-                content: "\f5d1";
+                content: "\f7ef";
                 color: $color-secondary;
 
                 transform: translateY(-150px);
