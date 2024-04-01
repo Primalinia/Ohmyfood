@@ -1,6 +1,6 @@
 # Ohmyfood
 
-![https://github.com/Primalinia/Ohmyfood_P4]
+![https://github.com/Primalinia/Ohmyfood]
 
 Description:
 
