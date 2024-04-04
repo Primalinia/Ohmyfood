@@ -23,7 +23,7 @@
 
 /**** titre d'en tête ****/
 @mixin title__heading {
-    font-size: 24px;
+   
     line-height: 1;
     font-weight: map-get($font-weight,bold);
 }
@@ -31,6 +31,7 @@
 @mixin large__responsive {
     width: 137px;
     margin: 0;
+
 }
 
 @mixin huge__responsive {
@@ -40,7 +41,7 @@
 }
 
 @mixin hero__title {
-    font-size: 40px;
+    font-size: 24px;
 }
 
 /**** cercle ****/

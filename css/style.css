@@ -646,10 +646,9 @@ body {
 .hero__title {
   width: 70%;
   margin: 10px 0;
-  font-size: 24px;
   line-height: 1;
   font-weight: 700;
-  font-size: 40px;
+  font-size: 24px;
 }
 .hero p {
   width: 86%;
@@ -690,7 +689,6 @@ body {
 }
 .functioning__title {
   margin: 10px 0;
-  font-size: 24px;
   line-height: 1;
   font-weight: 700;
 }
@@ -776,7 +774,6 @@ body {
 .restaurant__title {
   width: 90%;
   margin: 20px auto;
-  font-size: 24px;
   line-height: 1;
   font-weight: 700;
 }
