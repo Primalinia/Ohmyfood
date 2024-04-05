@@ -64,7 +64,8 @@
 
     &__container {
 
-        @include large__responsive ; @include huge__responsive{
+        @include large__responsive;
+        @include huge__responsive{
             display: flex;
             flex-direction: column;
             align-items: flex-start;

@@ -330,7 +330,7 @@
 .loading-spinner__plate__fork img {
   height: 100%;
 }
-.loading-spinner__plate__food34 {
+.loading-spinner__plate__food {
   width: 25%;
   height: 25%;
   z-index: 1;
@@ -338,7 +338,7 @@
   align-items: center;
   justify-content: center;
 }
-.loading-spinner__plate__food34::before {
+.loading-spinner__plate__food::before {
   position: absolute;
   top: 35%;
   right: 33%;
@@ -346,12 +346,12 @@
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   font-size: 40px;
-  content: "\f578";
+  content: "\f561";
   color: #99E2D0;
   transform: translateY(-150px);
   animation: icons-appearing 610ms 1220ms both;
 }
-.loading-spinner__plate__food34::after {
+.loading-spinner__plate__food::after {
   position: absolute;
   top: 30%;
   right: 37%;
@@ -568,7 +568,8 @@ a {
 
 body {
   width: 100%;
-  margin: auto;
+  margin: 0 auto;
+  height: auto;
 }
 
 .header {
@@ -644,11 +645,11 @@ body {
   text-align: center;
 }
 .hero__title {
+  font-size: 24px;
+  line-height: normal;
+  font-weight: 700;
   width: 70%;
   margin: 10px 0;
-  line-height: 1;
-  font-weight: 700;
-  font-size: 24px;
 }
 .hero p {
   width: 86%;
@@ -689,7 +690,8 @@ body {
 }
 .functioning__title {
   margin: 10px 0;
-  line-height: 1;
+  font-size: 24px;
+  line-height: normal;
   font-weight: 700;
 }
 .functioning__list {
@@ -774,7 +776,8 @@ body {
 .restaurant__title {
   width: 90%;
   margin: 20px auto;
-  line-height: 1;
+  font-size: 24px;
+  line-height: normal;
   font-weight: 700;
 }
 .restaurant__bloc {

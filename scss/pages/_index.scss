@@ -11,7 +11,8 @@ a {
 
 body {
     width: 100%;
-    margin: auto;
+    margin: 0 auto;
+    height: auto;
 }
 
 .header {
@@ -101,10 +102,9 @@ body {
     text-align: center;
 
     &__title {
+        @include title__heading;
         width: 70%;
         margin: 10px 0;
-        @include title__heading;
-        @include hero__title;
     }
 
     & p {
