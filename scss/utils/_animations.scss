@@ -1,4 +1,6 @@
 // Loading 
+/* Cette animation définit les styles pour l'apparition et la disparition
+d'un élément chargement */
 @keyframes loading-appear {
     50% {
         opacity: 0.95;
@@ -13,7 +15,8 @@
         z-index: -20;
     }
 }
-
+/* définit une transformation de rotation qui fait tourner
+l'élément sur lui-même  (rotation complète 360°)*/
 @keyframes rotate-gradient {
     0% {
         transform: rotate(0deg);
@@ -26,12 +29,12 @@
 
 @keyframes icons-appearing {
     0% {
-        transform: translateY(-150px);
+        transform: translateY(-150px); //permet de commencer hors de l'écran
         opacity: 0;
-        animation-timing-function: cubic-bezier(.5, .78, .83, .67);
+        animation-timing-function: cubic-bezier(.5, .78, .83, .67); //courbe d’accélération
     }
 
-    40% {
+    40% { //permet de faire apparaître l'icône
         transform: translateY(-10px);
         opacity: 1;
 
@@ -44,11 +47,11 @@
     }
 
     67% {
-        transform: rotate(10deg);
+        transform: rotate(10deg); 
     }
 
     74% {
-        transform: rotate(-10deg);
+        transform: rotate(-10deg); //Oriente l'icône dans l'autre sens
     }
 
     80% {
@@ -57,12 +60,12 @@
     }
 
     100% {
-        transform: translateY(+150px);
+        transform: translateY(+150px); //permet de faire disparaitre l'icône
         opacity: 0;
         animation-timing-function: cubic-bezier(.5, .78, .83, .67);
     }
 }
-
+//utilisé sur les éléments qui doivent remonter et/ou descendre
 @keyframes ustensils-moving {
     0% {
         transform: translateY(-5px);
@@ -77,25 +80,25 @@
 
 // Courses apparition 
 @keyframes fade-in {
-    0% {
+    0% { //permet de commencer hors de l'écran
         transform: translateY(20px);
         opacity: 0;
     }
 
-    75% {
+    75% { //fait apparaître l'élément enfoui
         opacity: 1;
     }
 
     100% {
         transform: translateY(0);
-        animation-timing-function: cubic-bezier(.17, .67, .83, .67);
+        animation-timing-function: cubic-bezier(.17, .67, .83, .67);//permet de lisser la descente de l'élément
     }
 }
 
 .fade-in {
     transform-origin: top;
     animation: fade-in 2s forwards;
-
+    //permet de lisser l'accélération et le ralentissement de l'animation
     &--1delay {
         animation: fade-in 2s 500ms both;
     }
@@ -107,7 +110,8 @@
 
 
 // Heart fill 
-
+/* Annimation de remplissage 
+de l'icone coeur */
 @keyframes heart-fill {
     0% {
         opacity: (0);
@@ -151,7 +155,7 @@
 }
 
  // APPARITION DES PLATS 
-  
+
 .race-list {
 	&:nth-child(2) {
 		.race-cards {
@@ -162,7 +166,7 @@
 }
 
   // APPARITION DES DESSERTS 
-  
+
 .race-list {
 	&:nth-child(3) {
 		.race-cards {
@@ -173,40 +177,41 @@
 }
 
   // Animation pour les éléments d'entrée 
-
-  @keyframes appearEntrance {
+/* Fait monter l'élément depuis le bas de la page j
+usqu'à sa position finale */
+@keyframes appearEntrance {
     0% {
-      opacity: 0;
-      transform: translateY(-20px);
+    opacity: 0;
+    transform: translateY(-20px);
     }
     100% {
-      opacity: 1;
-      transform: translateY(0);
+    opacity: 1;
+    transform: translateY(0);
     }
-  }
-  
+}
+
   // Animation pour les éléments de plat 
+/* appearPlat et appearDessert:font monter l'élément depuis le bas
+de la page vers le centre de son conteneur. */
+@keyframes appearPlat {
+    0% {
+    opacity: 0;
+    transform: translateY(-20px);
+    }
+    100% {
+    opacity: 1;
+    transform: translateY(0);
+    }
+}
 
-  @keyframes appearPlat {
-    0% {
-      opacity: 0;
-      transform: translateY(-20px);
-    }
-    100% {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-  
   // Animation pour les éléments de dessert 
-  @keyframes appearDessert {
+@keyframes appearDessert {
     0% {
-      opacity: 0;
-      transform: translateY(-20px);
+    opacity: 0;
+    transform: translateY(-20px);
     }
     100% {
-      opacity: 1;
-      transform: translateY(0);
+    opacity: 1;
+    transform: translateY(0);
     }
-  }
-  
+}

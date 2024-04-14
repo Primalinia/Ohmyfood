@@ -10,6 +10,8 @@
 /**** cercle ****/
 /**** Shadow ****/
 /**** gradient ****/
+/* Cette animation définit les styles pour l'apparition et la disparition
+d'un élément chargement */
 @keyframes loading-appear {
   50% {
     opacity: 0.95;
@@ -22,6 +24,8 @@
     z-index: -20;
   }
 }
+/* définit une transformation de rotation qui fait tourner
+l'élément sur lui-même  (rotation complète 360°)*/
 @keyframes rotate-gradient {
   0% {
     transform: rotate(0deg);
@@ -94,6 +98,8 @@
   animation: fade-in 2s 1000ms both;
 }
 
+/* Annimation de remplissage 
+de l'icone coeur */
 @keyframes heart-fill {
   0% {
     opacity: 0;
@@ -134,6 +140,8 @@
   opacity: 0;
 }
 
+/* Fait monter l'élément depuis le bas de la page j
+usqu'à sa position finale */
 @keyframes appearEntrance {
   0% {
     opacity: 0;
@@ -144,6 +152,8 @@
     transform: translateY(0);
   }
 }
+/* appearPlat et appearDessert:font monter l'élément depuis le bas
+de la page vers le centre de son conteneur. */
 @keyframes appearPlat {
   0% {
     opacity: 0;
@@ -313,7 +323,7 @@
   width: auto;
   z-index: 6;
   opacity: 1;
-  animation: ustensils-moving 500ms 610ms;
+  animation: ustensils-moving 500ms 680ms;
 }
 .loading-spinner__plate__knife img {
   height: 100%;
@@ -325,7 +335,7 @@
   width: auto;
   z-index: 5;
   opacity: 1;
-  animation: ustensils-moving 500ms 1830ms;
+  animation: ustensils-moving 500ms 2040ms;
 }
 .loading-spinner__plate__fork img {
   height: 100%;
@@ -349,7 +359,7 @@
   content: "\f561";
   color: #99E2D0;
   transform: translateY(-150px);
-  animation: icons-appearing 610ms 1220ms both;
+  animation: icons-appearing 680ms 1360ms both;
 }
 .loading-spinner__plate__food::after {
   position: absolute;
@@ -362,7 +372,7 @@
   content: "\f7ef";
   color: #FF79DA;
   transform: translateY(-150px);
-  animation: icons-appearing 610ms 1830ms both;
+  animation: icons-appearing 680ms 2040ms both;
 }
 
 .page__restaurant--img {

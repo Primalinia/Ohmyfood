@@ -409,12 +409,12 @@ body {
         &--info {
 
             @include large__responsive {
-               & p {
-                   width: 122px;
-                   height: 20px;
-               }
-           }
-       }
+                & p {
+                    width: 122px;
+                    height: 20px;
+                }
+            }
+        }
     }
 }
 

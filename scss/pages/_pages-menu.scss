@@ -39,9 +39,8 @@
             height: 41px;
             justify-content: center;
             
-            @include huge__responsive
+            @include huge__responsive;
         }
-
         
 
         & h2 {

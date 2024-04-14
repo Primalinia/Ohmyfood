@@ -13,5 +13,3 @@ Ce projet est réalisé en HTML5 et CSS3. Il utilise le préprocesseur suivant :
 ➡️ Sass(v1.71.1 ou ulterieur)
 
 Ce travail est réalisé pour le projet 4 de la formation Intégrateur Web d'OpenClassrooms.
-
-npm run sass (ecrire dans le terminal a chaque fois que j'ouvre le projet)

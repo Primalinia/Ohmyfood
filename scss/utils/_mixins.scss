@@ -28,6 +28,9 @@
     font-weight: map-get($font-weight,bold);
 }
 
+@mixin hero__title {
+    font-size: 40px;
+}
 @mixin large__responsive {
     width: 137px;
     margin: 0;
