@@ -17,7 +17,7 @@ body {
 
 .header {
     padding: 2%;
-    box-shadow: inset 0px -10px 7px -6px #d5d5d5;
+    box-shadow: inset 0px -10px 7px -6px $shadow;
 
     &__logo {
         margin: 0;
